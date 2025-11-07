@@ -5,7 +5,7 @@ const letterVideos = {
   A: "/55.mp4",
   G: "/33.mp4",
   D: "/44.mp4",
-  H: "/11.mp4",
+  H: "/22.mp4",
 } as const;
 
 type LetterKey = keyof typeof letterVideos;
@@ -20,14 +20,23 @@ const HeroSection = () => {
       className="relative flex items-center justify-center w-full overflow-hidden text-white bg-black"
       style={{
         minHeight: "130vh",
-        backgroundImage: 'url("/22 (2).gif")',
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
+        // backgroundImage: 'url("/22 (2).gif")',
+        // backgroundSize: "cover",
+        // backgroundPosition: "center",
+        // backgroundRepeat: "no-repeat",
       }}
     >
+      {/* 🔹 Background Video instead of background image */}
+      <video
+        src="/Shivji's_puzzle_room.mp4" // Replace this with your background video path
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute top-0 left-0 z-0 object-cover w-full h-full"
+      />
       {/* Background Video */}
-      {currentVideo && (
+      {/* {currentVideo && (
         <video
           key={currentVideo}
           src={currentVideo}
@@ -37,12 +46,24 @@ const HeroSection = () => {
           playsInline
           className="absolute top-0 left-0 z-0 object-cover w-full h-full"
         />
+      )} */}
+      {/* 🔹 Dynamic letter-triggered video overlay */}
+      {currentVideo && (
+        <video
+          key={currentVideo}
+          src={currentVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute top-0 left-0 z-10 object-cover w-full h-full transition-opacity duration-500"
+        />
       )}
 
       {/* Content */}
       <div className="relative z-20 text-center w-[90%] md:w-[80%] lg:w-[70%] mx-auto md:-mt-[40vh] lg:-mt-[30vh]">
         <h1
-          className="font-bold text-[6vw] md:lg:text-[2vw] lg:text-[5vw] xl:text-[5vw] 2xl:text-[4.2vw] tracking-wide mb-[2vh]"
+          className="font-bold text-[6vw] md:lg:text-[2vw] lg:text-[5vw] xl:text-[5vw] 2xl:text-[3.2vw] tracking-wide mb-[2vh]"
           style={{
             color: "#FFFFFF8C",
             textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
@@ -53,7 +74,7 @@ const HeroSection = () => {
         </h1>
 
         <p
-          className="mx-auto text-[5vw] lg:text-[1.2vw] md:text-[1.2vw] xl:text-[1.2vw] 2xl:text-[1.2vw]"
+          className="mx-auto text-[5vw] lg:text-[1.2vw] md:text-[1.2vw] xl:text-[1.2vw] 2xl:text-[1.0vw]"
           style={{
             color: "#FFFFFF8C",
             textShadow: "1px 1px 2px rgba(0,0,0,0.7)",

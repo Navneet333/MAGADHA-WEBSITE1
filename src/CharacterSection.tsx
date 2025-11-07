@@ -3,15 +3,15 @@ import { motion } from "framer-motion";
 
 const characters = [
   { id: 1, name: "Realistic 3D", img: "/characters/char11.png", glow: "from-[#FF5F6D] to-[#FFC371]" },
-  { id: 2, name: "Mythic 3D", img: "/characters/char2.svg", glow: "from-[#00C9FF] to-[#92FE9D]" },
-  { id: 3, name: "Heroic 3D", img: "/characters/char3.svg", glow: "from-[#7F00FF] to-[#E100FF]" },
-  { id: 4, name: "Epic 3D", img: "/characters/char4.svg", glow: "from-[#FF512F] to-[#F09819]" },
-  { id: 5, name: "Legend 3D", img: "/characters/char1.svg", glow: "from-[#36D1DC] to-[#5B86E5]" },
-  { id: 6, name: "Ancient 3D", img: "/characters/char2.svg", glow: "from-[#FF9966] to-[#FF5E62]" },
-  { id: 7, name: "Divine 3D", img: "/characters/char3.svg", glow: "from-[#00B09B] to-[#96C93D]" },
-  { id: 8, name: "Fantasy 3D", img: "/characters/char4.svg", glow: "from-[#ED213A] to-[#93291E]" },
-  { id: 9, name: "Mystic 3D", img: "/characters/char1.svg", glow: "from-[#2AF598] to-[#009EFD]" },
-  { id: 10, name: "Celestial 3D", img: "/characters/char2.svg", glow: "from-[#F7971E] to-[#FFD200]" },
+  { id: 2, name: "Mythic 3D", img: "/characters/art8.png", glow: "from-[#00C9FF] to-[#92FE9D]" },
+  // { id: 3, name: "Heroic 3D", img: "/characters/char3.svg", glow: "from-[#7F00FF] to-[#E100FF]" },
+  // { id: 4, name: "Epic 3D", img: "/characters/char4.svg", glow: "from-[#FF512F] to-[#F09819]" },
+  // { id: 5, name: "Legend 3D", img: "/characters/char1.svg", glow: "from-[#36D1DC] to-[#5B86E5]" },
+  // { id: 6, name: "Ancient 3D", img: "/characters/char2.svg", glow: "from-[#FF9966] to-[#FF5E62]" },
+  // { id: 7, name: "Divine 3D", img: "/characters/char3.svg", glow: "from-[#00B09B] to-[#96C93D]" },
+  // { id: 8, name: "Fantasy 3D", img: "/characters/char4.svg", glow: "from-[#ED213A] to-[#93291E]" },
+  // { id: 9, name: "Mystic 3D", img: "/characters/char1.svg", glow: "from-[#2AF598] to-[#009EFD]" },
+  // { id: 10, name: "Celestial 3D", img: "/characters/char2.svg", glow: "from-[#F7971E] to-[#FFD200]" },
 ];
 
 const CharacterSection: React.FC = () => {
@@ -140,7 +140,7 @@ const CharacterSection: React.FC = () => {
       </div>
 
       {/* View More Button */}
-      <div className="flex justify-center -mb-20   mt-10 relative z-10">
+      {/* <div className="flex justify-center -mb-20   mt-10 relative z-10">
         <button
           onClick={handleToggle}
           className="px-8 py-2 md:px-10 md:py-3 2xl:py-6 
@@ -152,7 +152,7 @@ const CharacterSection: React.FC = () => {
         >
           {isExpanded ? "View Less" : "View More"}
         </button>
-      </div>
+      </div> */}
 
       {/* Bottom Grass */}
       <div className="mt-20 relative w-full">

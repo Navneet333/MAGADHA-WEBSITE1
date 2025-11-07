@@ -13,13 +13,13 @@ const WhatWeDo: React.FC = () => {
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth
-      if (width < 768) {
+      if (width <= 768) {
         setScreenSize("mobile")
-      } else if (width < 1024) {
+      } else if (width <= 1024) {
         setScreenSize("tablet")
-      } else if (width < 1440) {
+      } else if (width <= 1440) {
         setScreenSize("laptop")
-      } else if (width < 1920) {
+      } else if (width > 1440 && width <= 1920) {
         setScreenSize("desktop")
       } else {
         setScreenSize("large")
@@ -86,8 +86,8 @@ const WhatWeDo: React.FC = () => {
     mobile: "250vh",
     tablet: "450vh",
     laptop: "390vh",
-    desktop: "350vh",
-    large: "230vh",
+    desktop: "250vh",
+    large: "150vh",
   })
 
   // Padding

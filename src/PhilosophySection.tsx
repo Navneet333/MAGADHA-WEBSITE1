@@ -88,17 +88,17 @@ const PhilosophySection = () => {
       />
 
       {/* Heading */}
-      <h2 ref={headingRef} className="text-center text-white text-[9vh] mt-10 md:mt-0 md:text-[20vh] font-instrument tracking-wide pt-10">
+      <h2 ref={headingRef} className="text-center text-white text-[9vh] mt-10 md:mt-0 md:text-[10vh] font-instrument tracking-wide pt-10">
         Our Philosophy
       </h2>
 
       {/* Rotating Wheel and Text */}
       <div className="relative flex justify-center items-center mt-8">
         {/* Left Text */}
-        <div className="absolute left-8 md:top-0 max-w-[500px] -translate-y-1/2 text-left text-white font-bold md:text-6xl transition-all duration-700">
+        <div className="absolute left-8 md:top-0 max-w-[500px] -translate-y-1/2 text-left text-white font-bold md:text-5xl transition-all duration-700">
           {leftTexts[currentText]}
         </div>
-        <div className="absolute left-8 top-32 md:top-24 max-w-xs -translate-y-1/2 text-left text-white font-bold md:text-6xl transition-all duration-700">
+        <div className="absolute left-8 top-32 md:top-24 max-w-xs -translate-y-1/2 text-left text-white font-bold md:text-5xl transition-all duration-700">
           Play -
         </div>
 

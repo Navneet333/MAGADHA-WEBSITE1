@@ -14,7 +14,7 @@ const FlagShip = () => {
           src="/bottompillar12.png"
           alt="Flagship Image"
 
-           className="z-20 h-[37vh] w-full md:h-[102vh] lg:h-[148vh] xl:h-[140vh] object-cover -translate-x-[10px] md:-translate-x-[0px] translate-y-[20px] md:translate-y-[230px] lg:translate-y-[340px]"/>
+           className="z-20 h-[37vh] w-full md:h-[102vh] lg:h-[148vh] xl:h-[112vh] object-cover -translate-x-[10px] md:-translate-x-[0px] translate-y-[20px] md:translate-y-[230px] lg:translate-y-[340px]"/>
            
         {/* Text Content */}
         <div className="relative  right-[15%] top-[calc(10%+110px)]  max-w-[400px] z-30 text-right text-white">

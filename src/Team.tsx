@@ -35,7 +35,7 @@ const characterGrid: Character[] = [
     centerImage: '/pp.png',
     name: 'Prabhdeep Singh ',
     // title: '3D Environment artist',
-    description: 'I’m Pradeep, and if there’s one thing that defines me, it’s my absolute passion for gaming. I bring a high level of energy to everything I do, especially when I’m playing. I love to stream and share that excitement and action with my community. For me, gaming isn’t just a hobby—it’s how I connect with others and create dynamic, entertaining content. I live for those high-stakes moments and the interaction with everyone who tunes in.'
+    description: 'I’m Prabhdeep, and if there’s one thing that defines me, it’s my absolute passion for gaming. I bring a high level of energy to everything I do, especially when I’m playing. I love to stream and share that excitement and action with my community. For me, gaming isn’t just a hobby—it’s how I connect with others and create dynamic, entertaining content. I live for those high-stakes moments and the interaction with everyone who tunes in.'
   },
     {
     id: 4,
