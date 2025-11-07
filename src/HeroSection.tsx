@@ -1,11 +1,19 @@
 import { useState } from "react";
 
+const assetPath = (path: string) => {
+  const base = import.meta.env.BASE_URL.endsWith("/")
+    ? import.meta.env.BASE_URL
+    : `${import.meta.env.BASE_URL}/`;
+  const normalized = path.startsWith("/") ? path.slice(1) : path;
+  return `${base}${normalized}`;
+};
+
 const letterVideos = {
-  M: "/videos/77.mp4",
-  A: "/videos/55.mp4",
-  G: "/videos/33.mp4",
-  D: "/videos/44.mp4",
-  H: "/videos/22.mp4",
+  M: assetPath("videos/77.mp4"),
+  A: assetPath("videos/55.mp4"),
+  G: assetPath("videos/33.mp4"),
+  D: assetPath("videos/44.mp4"),
+  H: assetPath("videos/22.mp4"),
 } as const;
 
 type LetterKey = keyof typeof letterVideos;
@@ -28,7 +36,7 @@ const HeroSection = () => {
     >
       {/* 🔹 Background Video instead of background image */}
       <video
-        src="/videos/Shivji's_puzzle_room.mp4" // Replace this with your background video path
+        src={assetPath("videos/Shivji's_puzzle_room.mp4")}
         autoPlay
         loop
         muted
@@ -157,10 +165,9 @@ const HeroSection = () => {
 
       {/* Grass Decoration */}
       <img
-        src="/herosection-Grass1.png"
+        src={assetPath("herosection-Grass1.png")}
         alt="Grass decoration"
         className="absolute bottom-[-7%] lg:bottom-[-22%] xl:bottom-[-23%] 2xl:bottom-[-34%] left-1/2 w-[160vw] max-w-none -translate-x-1/2 object-cover z-50"
-     
       />
     </section>
   );
