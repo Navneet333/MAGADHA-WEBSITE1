@@ -14,11 +14,11 @@ export default function Environment() {
   const manualClick = useRef(false);
 
   const mediaMap: Record<string, string> = {
-    "grand-temple": "/Across_Temple.mp4",
-    "divine-cave": "/Shivji's_puzzle_room.mp4",
+    "grand-temple": "/videos/Across_Temple.mp4",
+    "divine-cave": "/videos/Shivji's_puzzle_room.mp4",
     "river-sayja": "/videos/river-sayja.mp4",
-    "forgotten-dungeon": "/Mayasur_Arena.mp4",
-    "forest-beyond": "/77.mp4",
+    "forgotten-dungeon": "/videos/Mayasur_Arena.mp4",
+    "forest-beyond": "/videos/77.mp4",
   };
 
   const environmentDetails: Record<

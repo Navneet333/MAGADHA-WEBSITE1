@@ -133,7 +133,7 @@ const CTA: React.FC = () => {
 
         {/* Background Video with reduced opacity */}
         <video
-          src='/camp_Shot_2.mp4'
+          src='/videos/camp_Shot_2.mp4'
           autoPlay
           loop
           muted

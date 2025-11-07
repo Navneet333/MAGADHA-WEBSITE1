@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 const letterVideos = {
-  M: "/77.mp4",
-  A: "/55.mp4",
-  G: "/33.mp4",
-  D: "/44.mp4",
-  H: "/22.mp4",
+  M: "/videos/77.mp4",
+  A: "/videos/55.mp4",
+  G: "/videos/33.mp4",
+  D: "/videos/44.mp4",
+  H: "/videos/22.mp4",
 } as const;
 
 type LetterKey = keyof typeof letterVideos;
@@ -28,7 +28,7 @@ const HeroSection = () => {
     >
       {/* 🔹 Background Video instead of background image */}
       <video
-        src="/Shivji's_puzzle_room.mp4" // Replace this with your background video path
+        src="/videos/Shivji's_puzzle_room.mp4" // Replace this with your background video path
         autoPlay
         loop
         muted
