@@ -15,17 +15,7 @@ const characters = [
 ];
 
 const CharacterSection: React.FC = () => {
-    const [visibleCount, setVisibleCount] = useState(6);
-
-  const handleToggle = () => {
-    if (visibleCount >= characters.length) {
-      setVisibleCount(6);
-    } else {
-      setVisibleCount((prev) => Math.min(prev + 4, characters.length));
-    }
-  };
-
-  const isExpanded = visibleCount >= characters.length;
+    const [visibleCount] = useState(6);
 
    const headingRef = useRef<HTMLHeadingElement>(null);
   const [scrollProgress, setScrollProgress] = useState(0);
